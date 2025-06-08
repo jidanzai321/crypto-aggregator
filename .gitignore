@@ -1,11 +1,23 @@
 
-__pycache__/
+# Python artefacts
 
-venv/
+__pycache__/
 
 *.py[cod]
 
+
+
+# Virtual env
+
+venv/
+
+
+
+# Editor / backup files
+
 *.save*
+
+*.bak
 
 .DS_Store
 
