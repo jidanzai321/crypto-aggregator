@@ -260,6 +260,8 @@ class Aggregator:
         if self.redis:
 
             await self.redis.publish(sym, json.dumps(lad))
+        from pathlib import Path, PurePosixPath
+        Path("/tmp/latest_books.json").write_text(json.dumps(self.cache))
 
 
 # ---------------- FAST RUN ENTRY (optional CLI) ---------------- #
